@@ -1,0 +1,24 @@
+//
+//  MXNotebookPrefixHeader.pch
+//  MXNotebook
+//
+//  Created by msxf on 2017/8/3.
+//  Copyright © 2017年 yellow. All rights reserved.
+//
+
+#ifndef MXNotebookPrefixHeader_pch
+#define MXNotebookPrefixHeader_pch
+
+#import "Constants.h"
+#import <Masonry/Masonry.h>
+#import "MXTextField.h"
+#import "MXBaseViewController.h"
+#import "UIColor+MXRandomColor.h"
+#import "MXBaseTableViewController.h"
+
+typedef NS_ENUM(NSInteger, PaperDetailType) {
+    PaperAdd,
+    PaperUpdate
+};
+
+#endif /* MXNotebookPrefixHeader_pch */

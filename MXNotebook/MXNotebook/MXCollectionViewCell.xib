@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="topicCell" id="gTV-IL-0wX" customClass="MXCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="129" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装修" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp4-b5-7we">
+                        <rect key="frame" x="10" y="32.5" width="109" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年8月1日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43B-yf-rgG">
+                        <rect key="frame" x="5" y="58.5" width="119" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhb-sR-e7p">
+                        <rect key="frame" x="99" y="0.0" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="q5H-RJ-nLk"/>
+                            <constraint firstAttribute="height" constant="30" id="uX8-OW-cUI"/>
+                        </constraints>
+                        <state key="normal" image="delete"/>
+                        <connections>
+                            <action selector="deleteAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="FMI-Yp-9PL"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwA-G7-bqF">
+                        <rect key="frame" x="40" y="97.5" width="49" height="13.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="Zp4-b5-7we" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="7jO-0Y-CdI"/>
+                <constraint firstItem="Zp4-b5-7we" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-15" id="BG6-ic-dOb"/>
+                <constraint firstItem="Qhb-sR-e7p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gcl-JP-tLG"/>
+                <constraint firstAttribute="trailing" secondItem="OwA-G7-bqF" secondAttribute="trailing" constant="40" id="LYa-yp-aki"/>
+                <constraint firstItem="OwA-G7-bqF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="40" id="M3b-Fb-Jqi"/>
+                <constraint firstItem="43B-yf-rgG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="OWf-zf-T0K"/>
+                <constraint firstItem="43B-yf-rgG" firstAttribute="top" secondItem="Zp4-b5-7we" secondAttribute="bottom" constant="5" id="PKG-Uv-ABn"/>
+                <constraint firstAttribute="trailing" secondItem="43B-yf-rgG" secondAttribute="trailing" constant="5" id="dgx-2m-42M"/>
+                <constraint firstAttribute="bottom" secondItem="OwA-G7-bqF" secondAttribute="bottom" constant="5" id="ex2-HG-oPV"/>
+                <constraint firstAttribute="trailing" secondItem="Qhb-sR-e7p" secondAttribute="trailing" id="gCs-UO-Ktg"/>
+                <constraint firstItem="43B-yf-rgG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="hKf-Ud-qdb"/>
+                <constraint firstAttribute="trailing" secondItem="Zp4-b5-7we" secondAttribute="trailing" constant="10" id="hyI-2p-xDJ"/>
+                <constraint firstItem="Zp4-b5-7we" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="vYc-d9-6LL"/>
+                <constraint firstItem="OwA-G7-bqF" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yS2-hd-QwH"/>
+            </constraints>
+            <size key="customSize" width="129" height="116"/>
+            <connections>
+                <outlet property="deleteButton" destination="Qhb-sR-e7p" id="Jnl-bW-7mq"/>
+                <outlet property="nameLabel" destination="Zp4-b5-7we" id="qdx-gC-MRY"/>
+                <outlet property="timeLabel" destination="43B-yf-rgG" id="u6J-fd-fPZ"/>
+                <outlet property="totalNumLabel" destination="OwA-G7-bqF" id="r4E-ZA-IGg"/>
+            </connections>
+            <point key="canvasLocation" x="64.5" y="85"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete" width="25" height="25"/>
+    </resources>
+</document>
