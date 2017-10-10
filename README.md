@@ -5,14 +5,21 @@
 * Customize translations between controllers.
 
 ## Effects
-1. ![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/123.gif)
-2. ![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/homepage.png)
-3. ![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/addbook.png)
-4. ![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/list.png)
-5. ![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/additem.png)
-6. ![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/choosedate.png)
-7. ![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/succes.png)
+#### Gif
+![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/123.gif)
+#### Homepage
+![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/homepage.png)
+#### Addbook
+![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/addbook.png)
+#### List
+![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/list.png)
+#### Additem
+![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/additem.png)
+#### ChooseDate
+![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/choosedate.png)
+#### Add Success
+![](https://github.com/iamhmx/MxNotebook/blob/master/screenshots/succes.png)
 
 ## Usage
-1. git clone git@github.com:iamhmx/MxNotebook.git
-2. pod install
+* git clone [git@github.com:iamhmx/MxNotebook.git]()
+* pod install
