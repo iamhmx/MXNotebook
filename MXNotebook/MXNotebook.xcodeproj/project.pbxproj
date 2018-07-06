@@ -520,7 +520,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MXNotebook/MXNotebookPrefixHeader.pch";
 				INFOPLIST_FILE = MXNotebook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.msxf.MXNotebook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yellow.MXNotebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -535,7 +535,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MXNotebook/MXNotebookPrefixHeader.pch";
 				INFOPLIST_FILE = MXNotebook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.msxf.MXNotebook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yellow.MXNotebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

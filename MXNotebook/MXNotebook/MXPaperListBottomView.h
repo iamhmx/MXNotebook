@@ -2,7 +2,7 @@
 //  MXPaperListBottomView.h
 //  MXNotebook
 //
-//  Created by msxf on 2017/8/8.
+//  Created by yellow on 2017/8/8.
 //  Copyright © 2017年 yellow. All rights reserved.
 //
 
