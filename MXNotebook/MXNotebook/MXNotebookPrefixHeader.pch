@@ -15,6 +15,7 @@
 #import "MXBaseViewController.h"
 #import "UIColor+MXRandomColor.h"
 #import "MXBaseTableViewController.h"
+#import "UIDevice+Model.h"
 
 typedef NS_ENUM(NSInteger, PaperDetailType) {
     PaperAdd,

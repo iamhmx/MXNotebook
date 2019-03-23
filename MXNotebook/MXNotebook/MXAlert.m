@@ -63,7 +63,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        self.customWindow = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        self.customWindow = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, [UIDevice deviceWidth], [UIDevice deviceHeight])];
         self.customWindow.backgroundColor = RgbaColor(100, 100, 100, 0.01);
         self.customWindow.windowLevel = UIWindowLevelStatusBar;
     }

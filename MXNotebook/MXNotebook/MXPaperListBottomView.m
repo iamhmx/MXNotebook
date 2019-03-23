@@ -23,7 +23,7 @@
 - (instancetype)initWithFrame:(CGRect)frame action:(PaperListBottomAction)action {
     if (self = [super initWithFrame:frame]) {
         self.buttonAction = action;
-        self.width = (SCREEN_WIDTH - 40) / 3.0;
+        self.width = ([UIDevice deviceWidth] - 40) / 3.0;
         [self setupViews];
     }
     return self;

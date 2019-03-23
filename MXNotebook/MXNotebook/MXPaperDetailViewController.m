@@ -141,7 +141,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT-20) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, [UIDevice statusBarHeight], [UIDevice deviceWidth], [UIDevice screenHeight]-[UIDevice statusBarHeight]) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [_tableView registerNib:[UINib nibWithNibName:@"MXPaperDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
@@ -179,7 +179,7 @@
 
 - (UIView *)buttonView {
     if (!_buttonView) {
-        _buttonView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
+        _buttonView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIDevice deviceWidth], 100)];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitle:@"保存账单" forState:UIControlStateNormal];

@@ -261,7 +261,7 @@
 
 - (MXPaperListBottomView *)bottomView {
     if (!_bottomView) {
-        _bottomView = [[MXPaperListBottomView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-60, SCREEN_WIDTH, 60) action:^(NSInteger index) {
+        _bottomView = [[MXPaperListBottomView alloc]initWithFrame:CGRectMake(0, [UIDevice screenHeight]-60, [UIDevice deviceWidth], 60) action:^(NSInteger index) {
             NSLog(@"index: %ld", index);
             if (index == 0) {
                 [self edit];
@@ -278,7 +278,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT-20-60) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, [UIDevice statusBarHeight], [UIDevice deviceWidth],  [UIDevice screenHeight]-[UIDevice statusBarHeight]-60) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];

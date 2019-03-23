@@ -198,13 +198,13 @@
 
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
-        CGFloat width = floorf((SCREEN_WIDTH - 60) / 3.0);
+        CGFloat width = floorf(([UIDevice deviceWidth] - 60) / 3.0);
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
         layout.itemSize = CGSizeMake(width, width * 6 / 5.0);
         layout.minimumLineSpacing = 10;
         layout.minimumInteritemSpacing = 10;
         layout.sectionInset = UIEdgeInsetsMake(10, 10, 0, 10);
-        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, NAV_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT_WITHOUT_NAV-BottomButtonBaseViewHeight) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, [UIDevice navHeight], [UIDevice deviceWidth], [UIDevice screenHeight] - [UIDevice navHeight] - BottomButtonBaseViewHeight) collectionViewLayout:layout];
         _collectionView.alwaysBounceVertical = YES;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
@@ -220,7 +220,7 @@
         [_bottomButton setTitle:@"添加账本" forState:UIControlStateNormal];
         _bottomButton.backgroundColor = ThemeColor;
         _bottomButton.titleLabel.font = [UIFont systemFontOfSize:17];
-        _bottomButton.frame = CGRectMake(10, SCREEN_HEIGHT_WITHOUT_NAV+7.5, SCREEN_WIDTH-20, BottomButtonHeight);
+        _bottomButton.frame = CGRectMake(10, [UIDevice screenHeight] - BottomButtonHeight - 10.0, [UIDevice deviceWidth]-20, BottomButtonHeight);
         _bottomButton.layer.cornerRadius = 5;
         _bottomButton.layer.masksToBounds = YES;
         [_bottomButton addTarget:self action:@selector(addTopic:) forControlEvents:UIControlEventTouchUpInside];

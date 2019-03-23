@@ -49,17 +49,17 @@
 - (void)setupCustomNavBar {
     self.navigationController.navigationBarHidden = YES;
     if (!self.hideNavBar) {
-        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIDevice deviceWidth], 64)];
         view.backgroundColor = ThemeColor;
         view.layer.shadowColor = [UIColor lightGrayColor].CGColor;
         view.layer.shadowRadius = 1;
         [self.view addSubview:view];
         
-        UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 63.5, SCREEN_WIDTH, 0.5)];
+        UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, [UIDevice navHeight] - 0.5, [UIDevice deviceWidth], 0.5)];
         line.backgroundColor = [UIColor lightGrayColor];
         [self.view addSubview:line];
         
-        self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 20, SCREEN_WIDTH-200, 44)];
+        self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 20, [UIDevice deviceWidth]-200, 44)];
         self.titleLabel.textColor = [UIColor whiteColor];
         self.titleLabel.font = [UIFont systemFontOfSize:17];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
